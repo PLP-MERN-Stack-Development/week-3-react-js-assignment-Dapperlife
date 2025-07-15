@@ -1,71 +1,203 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=19843378&assignment_repo_type=AssignmentRepo)
-# React.js and Tailwind CSS Assignment
 
-This assignment focuses on building a responsive React application using JSX and Tailwind CSS, implementing component architecture, state management, hooks, and API integration.
+# Task Manager - Chore Compass System
 
-## Assignment Overview
+A modern, responsive task management application built with React, Vite, TypeScript, and Tailwind CSS. Stay organized and get things done with an intuitive interface and powerful features.
 
-You will:
-1. Set up a React project with Vite and Tailwind CSS
-2. Create reusable UI components
-3. Implement state management using React hooks
-4. Integrate with external APIs
-5. Style your application using Tailwind CSS
+## 🚀 Features
 
-## Getting Started
+- ✅ **Create, Edit, and Delete Tasks** - Full CRUD operations for task management
+- 🎯 **Priority Levels** - Organize tasks by Low, Medium, and High priority
+- 📝 **Task Descriptions** - Add detailed descriptions to your tasks
+- 🔍 **Smart Filtering** - Filter tasks by All, Active, or Completed status
+- 📊 **Progress Tracking** - Visual progress bar showing completion percentage
+- 💾 **Local Storage** - Tasks persist between sessions
+- 📱 **Responsive Design** - Works perfectly on desktop and mobile devices
+- ⚡ **Fast Performance** - Built with Vite for lightning-fast development and builds
+- 🎨 **Modern UI** - Clean, beautiful interface with smooth animations
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Install dependencies:
+## 🛠️ Technology Stack
+
+- **Frontend Framework**: React 18
+- **Build Tool**: Vite
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn/ui
+- **Icons**: Lucide React
+- **State Management**: React Hooks + Local Storage
+
+## 📦 Installation
+
+### Prerequisites
+
+- Node.js (version 16 or higher)
+- npm, yarn, or pnpm
+
+### Quick Start
+
+1. **Clone the repository**
+   ```bash
+   git clone <YOUR_GIT_URL>
+   cd chore-compass-system
    ```
+
+2. **Install dependencies**
+   ```bash
    npm install
+   # or
+   yarn install
+   # or
+   pnpm install
    ```
-4. Start the development server:
-   ```
+
+3. **Start the development server**
+   ```bash
    npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
    ```
 
-## Files Included
+4. **Open your browser**
+   Navigate to `http://localhost:5173` to see the application running.
 
-- `Week3-Assignment.md`: Detailed assignment instructions
-- Starter files for your React application:
-  - Basic project structure
-  - Pre-configured Tailwind CSS
-  - Sample component templates
+## 🏗️ Build for Production
 
-## Requirements
+```bash
+npm run build
+# or
+yarn build
+# or
+pnpm build
+```
 
-- Node.js (v18 or higher)
-- npm or yarn
-- Modern web browser
-- Code editor (VS Code recommended)
+The built files will be in the `dist` directory, ready for deployment.
 
-## Project Structure
+## 📱 Application Screenshots
+
+### Main Dashboard
+The main interface shows your task list with filtering options and progress tracking.
+
+*[Screenshot of the main dashboard would be displayed here]*
+
+### Task Creation
+Create new tasks with titles, descriptions, and priority levels.
+
+*[Screenshot of the task creation form would be displayed here]*
+
+### Task Management
+Edit existing tasks inline or mark them as completed with a single click.
+
+*[Screenshot of task editing interface would be displayed here]*
+
+### Filtering and Progress
+Filter tasks by status and track your progress with the visual progress bar.
+
+*[Screenshot of the filtering sidebar would be displayed here]*
+
+## 🎯 Usage
+
+### Creating Tasks
+1. Click on the task input field at the top
+2. Enter your task title (required)
+3. Optionally add a description
+4. Select a priority level (Low, Medium, High)
+5. Click "Add Task" to create
+
+### Managing Tasks
+- **Complete**: Click the circle icon next to any task
+- **Edit**: Click the edit icon to modify task details
+- **Delete**: Click the trash icon to remove a task
+
+### Filtering
+Use the sidebar filters to view:
+- **All Tasks**: Show everything
+- **Active**: Show only incomplete tasks
+- **Completed**: Show only finished tasks
+
+### Progress Tracking
+The progress bar in the sidebar shows your completion percentage and task counts.
+
+## 🔧 Project Structure
 
 ```
 src/
-├── components/       # Reusable UI components
-├── pages/           # Page components
-├── hooks/           # Custom React hooks
-├── context/         # React context providers
-├── api/             # API integration functions
-├── utils/           # Utility functions
-└── App.jsx          # Main application component
+├── components/           # React components
+│   ├── ui/              # shadcn/ui components
+│   ├── TaskManager.tsx   # Main task manager component
+│   ├── TaskForm.tsx     # Task creation form
+│   ├── TaskList.tsx     # Task list container
+│   ├── TaskItem.tsx     # Individual task component
+│   └── TaskFilters.tsx  # Filtering sidebar
+├── types/               # TypeScript type definitions
+│   └── task.ts          # Task interface definitions
+├── pages/               # Page components
+│   └── Index.tsx        # Main page
+└── lib/                 # Utility functions
+    └── utils.ts         # Helper utilities
 ```
 
-## Submission
+## 🎨 Customization
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+### Styling
+The application uses Tailwind CSS for styling. You can customize the theme by modifying:
+- `tailwind.config.ts` - Tailwind configuration
+- `src/index.css` - Global styles and CSS variables
 
-1. Complete all required components and features
-2. Implement proper state management with hooks
-3. Integrate with at least one external API
-4. Style your application with Tailwind CSS
-5. Deploy your application and add the URL to your README.md
+### Components
+All components are modular and can be easily customized:
+- Modify component props in TypeScript interfaces
+- Update styling with Tailwind classes
+- Add new features by extending existing components
 
-## Resources
+## 📊 Performance Features
 
-- [React Documentation](https://react.dev/)
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
-- [Vite Documentation](https://vitejs.dev/guide/)
-- [React Router Documentation](https://reactrouter.com/) 
+- **Lazy Loading**: Components load only when needed
+- **Local Storage**: Efficient data persistence
+- **Optimized Rendering**: React optimizations prevent unnecessary re-renders
+- **Fast Build**: Vite provides instant hot module replacement
+
+## 🚀 Deployment
+
+### Deploy to Lovable
+1. Click the "Publish" button in the Lovable editor
+2. Your app will be deployed automatically
+
+### Deploy to Other Platforms
+After building the project (`npm run build`), you can deploy the `dist` folder to:
+- Vercel
+- Netlify
+- GitHub Pages
+- Any static hosting service
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📝 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🔗 Links
+
+- **Live Demo**: [Your deployed application URL]
+- **Documentation**: [Additional documentation if available]
+- **Issues**: [GitHub issues page]
+
+## 💡 Future Enhancements
+
+- [ ] User authentication
+- [ ] Cloud synchronization
+- [ ] Task categories/tags
+- [ ] Due dates and reminders
+- [ ] Team collaboration features
+- [ ] Advanced filtering options
+- [ ] Data export functionality
+
+---
+
+Built with ❤️ using React, Vite, and TypeScript.
